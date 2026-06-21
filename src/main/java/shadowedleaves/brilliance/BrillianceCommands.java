@@ -30,7 +30,7 @@ public class BrillianceCommands {
                                 BrillianceClient.setNightVision(false);
                                 context.getSource().sendFeedback(() -> BrillianceClient.createChatMessage("off"), false);
                             } else {
-                                context.getSource().sendFeedback(() -> Text.literal("[Brilliance] Unknown state: " + state), false);
+                                context.getSource().sendFeedback(() -> Text.literal("[Brilliance++] Unknown state: " + state), false);
                             }
                             return 1;
                         })

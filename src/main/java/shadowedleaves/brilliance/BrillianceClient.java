@@ -10,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextColor;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class BrillianceClient implements ClientModInitializer {
@@ -27,7 +28,7 @@ public class BrillianceClient implements ClientModInitializer {
                 "key.brilliance.toggle_night_vision",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_N,
-                "category.brilliance"
+                KeyBinding.Category.create(Identifier.of("brilliance", "general"))
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -66,7 +67,7 @@ public class BrillianceClient implements ClientModInitializer {
     }
 
     public static Text createChatMessage(String state) {
-        return Text.literal("[Brilliance] ")
+        return Text.literal("[Brilliance++] ")
                 .styled(style -> style.withColor(BRILLIANCE_COLOR))
                 .append(Text.literal("Set night vision to ")
                         .styled(style -> style.withColor(LIGHT_YELLOW_COLOR)))
@@ -75,7 +76,7 @@ public class BrillianceClient implements ClientModInitializer {
     }
 
     public static Text createToggleChatMessage() {
-        return Text.literal("[Brilliance] ")
+        return Text.literal("[Brilliance++] ")
                 .styled(style -> style.withColor(BRILLIANCE_COLOR))
                 .append(Text.literal("Toggled night vision!")
                         .styled(style -> style.withColor(LIGHT_YELLOW_COLOR)));

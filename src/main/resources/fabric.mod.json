@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "brilliance",
 	"version": "${version}",
-	"name": "Brilliance",
+	"name": "Brilliance++",
 	"description": "A Minecraft mod that adjusts the game's brightness!",
 	"authors": [
 		"ShadowedLeaves"
@@ -23,8 +23,8 @@
 	},
 	"mixins": [],
 	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.2",
+		"fabricloader": ">=0.18.2",
+		"minecraft": "1.21.11",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
