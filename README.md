@@ -5,13 +5,14 @@ This mod allows a player to toggle Night Vision to see in the dark!
 ---
 
 ### Supported Versions
-
+- 26.1.x
+- 1.21.11
 - 1.21.2
 - 1.21.1
 - 1.21
 - 1.20.4
 
-**Support for this project has been discontinued.**
+**Support for this project will be reinstated for as long as I remember this exists**
 
 ---
 
@@ -26,6 +27,7 @@ Press "N" to toggle night vision.
 ### Contact
 
 Discord: shadowedleaves_
+Skidders Discord:EvilMel
 
 ~~Feel free to message me to ask a question or suggest a new feature!~~
 
@@ -39,11 +41,12 @@ Supported Languages:
 - Spanish (Thanks to [xNexusACS](https://github.com/xNexusACS)!)
 - German (Thanks to [Lucanoria](https://github.com/Lucanoria)!)
 
-Github Repository: [Source Code](https://github.com/Fethercat/Brilliance)
+Original Github Repository: [Source Code](https://github.com/Fethercat/Brilliance)
+Github Fork Repository: [Source Code](https://github.com/EvilMelYTT/BrilliancePlusPlus)
 
-Report Issues: [Issues](https://github.com/Fethercat/Brilliance/issues)
+Report Issues: [Issues](https://github.com/EvilMelYTT/BrilliancePlusPlus/issues)
 
-**Brilliance** Wiki: [Wiki](https://github.com/Fethercat/Brilliance/wiki)
+**Original Brilliance** Wiki: [Wiki](https://github.com/Fethercat/Brilliance/wiki)
 
 ---
 
