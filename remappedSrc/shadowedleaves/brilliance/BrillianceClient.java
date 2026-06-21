@@ -3,12 +3,11 @@ package shadowedleaves.brilliance;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
-import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import org.lwjgl.glfw.GLFW;
@@ -17,10 +16,6 @@ public class BrillianceClient implements ClientModInitializer {
     public static boolean nightVision = false;
     private static KeyMapping toggleNightVisionKey;
 
-    private static final KeyMapping.Category CATEGORY = KeyMapping.Category.register(
-            Identifier.fromNamespaceAndPath("brilliance", "general")
-    );
-
     private static final TextColor BRILLIANCE_COLOR = TextColor.fromRgb(0xFFFF00); // Yellow
     private static final TextColor LIGHT_YELLOW_COLOR = TextColor.fromRgb(0xFFFF6E); // Light Yellow
     private static final TextColor GREEN_COLOR = TextColor.fromRgb(0x00FF00); // Green
@@ -28,11 +23,11 @@ public class BrillianceClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        toggleNightVisionKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
+        toggleNightVisionKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.brilliance.toggle_night_vision",
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_N,
-                CATEGORY
+                "category.brilliance"
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -71,7 +66,7 @@ public class BrillianceClient implements ClientModInitializer {
     }
 
     public static Component createChatMessage(String state) {
-        return Component.literal("[Brilliance++] ")
+        return Component.literal("[Brilliance] ")
                 .withStyle(style -> style.withColor(BRILLIANCE_COLOR))
                 .append(Component.literal("Set night vision to ")
                         .withStyle(style -> style.withColor(LIGHT_YELLOW_COLOR)))
@@ -80,7 +75,7 @@ public class BrillianceClient implements ClientModInitializer {
     }
 
     public static Component createToggleChatMessage() {
-        return Component.literal("[Brilliance++] ")
+        return Component.literal("[Brilliance] ")
                 .withStyle(style -> style.withColor(BRILLIANCE_COLOR))
                 .append(Component.literal("Toggled night vision!")
                         .withStyle(style -> style.withColor(LIGHT_YELLOW_COLOR)));
