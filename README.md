@@ -6,8 +6,8 @@
 > This fork has been upscaled/ported with AI assistance from its original version. Specific methods used:
 >
 > - **1.21.11** — Migrated using [mcmodding-mcp](https://github.com/OGMatrix/mcmodding-mcp) and cross referencing whatever errors compiled
-> - **26.1.x** — Migrated using `./gradlew migrateMappings`
-> - **Both versions** — Gaps were filled in using **Gemini 3.5 Flash**
+> - **26.x** — Migrated using `./gradlew migrateMappings`
+> - **Both versions** — Reviewed by **Gemini 3.5 Flash**
 >
 > Porting done with direct consent from ShadowedLeaves/MysticIvy
 
@@ -18,7 +18,7 @@ This mod allows a player to toggle Night Vision to see in the dark!
 ---
 
 ### Supported Versions
-- 26.1.x
+- 26.x
 - 1.21.11
 - 1.21.2
 - 1.21.1
@@ -44,6 +44,7 @@ Discord: shadowedleaves_
 Skidders Discord:EvilMel
 
 ~~Feel free to message me to ask a question or suggest a new feature!~~
+**dude just fork the project and do it ethically**
 
 ---
 
