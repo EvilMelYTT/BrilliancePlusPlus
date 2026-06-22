@@ -1,17 +1,31 @@
 # Brilliance
 
+> [!IMPORTANT]
+> ## AI Usage Disclosure
+>
+> This fork has been upscaled/ported with AI assistance from its original version. Specific methods used:
+>
+> - **1.21.11** — Migrated using [mcmodding-mcp](https://github.com/OGMatrix/mcmodding-mcp) and cross referencing whatever errors compiled
+> - **26.x** — Migrated using `./gradlew migrateMappings`
+> - **Both versions** — Reviewed by **Gemini 3.5 Flash**
+>
+> Porting done with direct consent from ShadowedLeaves/MysticIvy
+
+---
+
 This mod allows a player to toggle Night Vision to see in the dark!
 
 ---
 
 ### Supported Versions
-
+- 26.x
+- 1.21.11
 - 1.21.2
 - 1.21.1
 - 1.21
 - 1.20.4
 
-**Support for this project has been discontinued.**
+**Support for this project will be reinstated for as long as I remember this exists**
 
 ---
 
@@ -27,7 +41,10 @@ Press "N" to toggle night vision.
 
 Discord: shadowedleaves_
 
+Skidders Discord:EvilMel
+
 ~~Feel free to message me to ask a question or suggest a new feature!~~
+**dude just fork the project and do it ethically**
 
 ---
 
@@ -39,11 +56,13 @@ Supported Languages:
 - Spanish (Thanks to [xNexusACS](https://github.com/xNexusACS)!)
 - German (Thanks to [Lucanoria](https://github.com/Lucanoria)!)
 
-Github Repository: [Source Code](https://github.com/Fethercat/Brilliance)
+Original Github Repository: [Source Code](https://github.com/MysticIvy/Brilliance)
 
-Report Issues: [Issues](https://github.com/Fethercat/Brilliance/issues)
+Github Fork Repository: [Source Code](https://github.com/EvilMelYTT/BrilliancePlusPlus)
 
-**Brilliance** Wiki: [Wiki](https://github.com/Fethercat/Brilliance/wiki)
+Report Issues: [Issues](https://github.com/EvilMelYTT/BrilliancePlusPlus/issues)
+
+**Original Brilliance** Wiki: [Wiki](https://github.com/MysticIvy/Brilliance/wiki)
 
 ---
 
