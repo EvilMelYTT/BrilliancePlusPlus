@@ -11,6 +11,7 @@ import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import org.lwjgl.glfw.GLFW;
 
 public class BrillianceClient implements ClientModInitializer {
@@ -39,6 +40,10 @@ public class BrillianceClient implements ClientModInitializer {
             if (toggleNightVisionKey.consumeClick()) {
                 toggleNightVision();
             }
+        });
+
+        ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
+            BrillianceCommands.register(dispatcher);
         });
     }
 

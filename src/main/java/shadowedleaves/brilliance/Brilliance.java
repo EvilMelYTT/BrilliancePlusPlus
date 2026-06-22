@@ -11,10 +11,6 @@ public class Brilliance implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-			BrillianceCommands.register(dispatcher);
-			LOGGER.info("[Brilliance++] Registered command: \"/nightvision\"!");
-			LOGGER.info("[Brilliance++] Brilliance has been initialized!");
-		});
+		LOGGER.info("[Brilliance++] Brilliance has been initialized!");
 	}
 }
