@@ -50,7 +50,7 @@ public class BrillianceClient implements ClientModInitializer {
         } else {
             client.player.removeEffect(MobEffects.NIGHT_VISION);
         }
-        client.gui.setOverlayMessage(createActionBarMessage(), true);
+        client.gui.hud.setOverlayMessage(createActionBarMessage(), true);
     }
 
     public static void setNightVision(boolean enable) {
@@ -61,7 +61,7 @@ public class BrillianceClient implements ClientModInitializer {
         } else {
             client.player.removeEffect(MobEffects.NIGHT_VISION);
         }
-        client.gui.setOverlayMessage(createActionBarMessage(), true);
+        client.gui.hud.setOverlayMessage(createActionBarMessage(), true);
     }
 
     private static Component createActionBarMessage() {
